@@ -19,21 +19,15 @@ if input.KeyCode == Key then
 if IsChatting ~= false then return end
 if not toggle then
 toggle = true
-Instance.new("Animation", game:GetService("ReplicatedStorage"):findFirstChild("ClientAnimations")).Name = 'Greet'
-game:GetService("ReplicatedStorage"):findFirstChild("ClientAnimations"):findFirstChild("Greet").AnimationId = 'rbxassetid://3189777795'
-game:service'Players'.LocalPlayer.Character:findFirstChildOfClass'Humanoid':LoadAnimation(game:GetService("ReplicatedStorage"):findFirstChild("ClientAnimations"):findFirstChild("Greet")):Play()
-wait(1.6)
-game:service'Players'.LocalPlayer.Character:findFirstChildOfClass'Humanoid':LoadAnimation(game:GetService("ReplicatedStorage"):findFirstChild("ClientAnimations"):findFirstChild("Greet")):Stop()
-wait()
 game:GetService("VirtualInputManager"):SendKeyEvent(true, "S", false, game)
 spawn(function()
 while toggle == true do wait(0.01)
-game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0.0)
-game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0.0)
-game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0.0)
-game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0.0)
-game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0.0)
-game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0.0)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0.1)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0.1)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0.1)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0.1)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "I", false, game) wait(0.1)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "O", false, game) wait(0.1)
 end
 end)
 Impostor =
